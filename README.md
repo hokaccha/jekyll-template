@@ -9,9 +9,9 @@ Use thees.
 ## Usage
 
     $ gem install bundler
-    $ git clone git://github.com/hokaccha/frontend-starter.git <projectname>
+    $ curl -L https://github.com/hokaccha/frontend-starter/tarball/master | tar vzx
+    $ mv hokaccha-frontend-starter-<xxxx> <projectname>
     $ cd <projectname>
-    $ rm -rf .git
     $ bundle install
     $ rake build:all
 
