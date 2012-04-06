@@ -1,0 +1,8 @@
+/.bundle
+/node_modules
+/vendor/bundle
+/Gemfile.lock
+/htdocs
+/_src/jekyll/js
+/_src/jekyll/css
+.sass-cache

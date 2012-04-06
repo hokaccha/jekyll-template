@@ -1,0 +1,10 @@
+{
+  "lib.js": [
+    "lib/jquery.min.js",
+    "lib/underscore-min.js",
+    "lib/backbone-min.js"
+  ],
+  "script.js:min": [
+    "script/main.js"
+  ]
+}
