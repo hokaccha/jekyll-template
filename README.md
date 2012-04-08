@@ -20,6 +20,7 @@ If you not installed `bundler`
     $ mv hokaccha-jekyll-template-<xxxx> <projectname>
     $ cd <projectname>
     $ bundle install
+    $ rake setup
     $ jekyll
 
 ## Directory tree
