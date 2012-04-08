@@ -32,8 +32,8 @@ If you not installed `bundler`
     ├── _test             # test dir
     ├── _src              # source dir
     │   ├── _layouts     # jekyll layout dir
-    │   ├── css          # css output dir
-    │   ├── js           # js output dir
+    │   ├── _scss        # scss source dir
+    │   ├── _js          # js source dir
     │   └── index.html   # default html file
     └── htdocs            # jekyll output dir
 
