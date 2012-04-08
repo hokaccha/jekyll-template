@@ -1,2 +1,8 @@
-source: _src/jekyll
+source: _src
 destination: htdocs
+
+scss:
+  source: _src/_scss
+  destination: css
+  cache: true
+  cache_location: .sass-cache

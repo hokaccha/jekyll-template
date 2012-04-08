@@ -1,0 +1,9 @@
+@import 'mixin';
+
+body {
+  background: #EFEFEF;
+}
+
+.foo {
+  @include inline-block;
+}
