@@ -8,7 +8,14 @@ Use thees.
 
 ## Usage
 
+### install bundler
+
+If you not installed `bundler`
+
     $ gem install bundler
+
+### download and setup
+
     $ curl -L https://github.com/hokaccha/jekyll-template/tarball/master | tar vzx
     $ mv hokaccha-jekyll-template-<xxxx> <projectname>
     $ cd <projectname>
