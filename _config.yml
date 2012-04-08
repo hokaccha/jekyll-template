@@ -6,3 +6,19 @@ scss:
   destination: css
   cache: true
   cache_location: .sass-cache
+
+js:
+  source: _src/_js
+  destination: js
+  targets:
+    script.js:
+      min: script.min.js
+      files:
+        - model.js
+        - view.js
+        - main.js
+    lib.js:
+      files:
+        - lib/jquery.min.js
+        - lib/underscore-min.js
+        - lib/backbone-min.js
