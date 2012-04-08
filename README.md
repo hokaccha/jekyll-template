@@ -28,6 +28,7 @@ If you not installed `bundler`
     ├── Gemfile           # dependencies modules
     ├── _config.yml       # jekyll config
     ├── _plugins          # jekyll plugins
+    ├── _test             # test dir
     ├── _src              # source dir
     │   ├── _layouts     # jekyll layout dir
     │   ├── css          # css output dir
