@@ -1,6 +1,6 @@
-# frontend develop starter
+# Jekyll template
 
-Use thees.
+Frontend development start kit. Use thees.
 
 * jekyll (static site generator)
 * scss (CSS meta lang)
