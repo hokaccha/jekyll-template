@@ -27,9 +27,10 @@ module Jekyll
       conf = site.config['scss'] || {}
       src_dir = conf['source'] || '_scss'
       dest_dir = conf['destination'] || 'css'
+      error_msg = "\e[31mSass compile error!\e[0m"
 
       Dir.glob("#{src_dir}/[^_]*.scss") do |file_path|
-        sass_engine = Sass::Engine.new(File.read(file_path), {
+        sass_engine = Sass::Engine.for_file(file_path, {
           :cache => conf['cache'] == nil ? true : conf['cache'],
           :cache_location => conf['cache_location'] || '.sass-cache',
           :load_paths => [src_dir],
@@ -38,7 +39,15 @@ module Jekyll
 
         dest_filename = File.basename(file_path).sub(/\.scss$/, '.css')
         dest_path = File.join(dest_dir, dest_filename)
-        site.static_files << ScssFile.new(dest_path, sass_engine.render)
+        begin
+          site.static_files << ScssFile.new(dest_path, sass_engine.render)
+        rescue Sass::SyntaxError => e
+          puts error_msg
+          puts e.sass_backtrace_str
+        rescue => e
+          puts error_msg
+          puts e
+        end
       end
     end
   end
